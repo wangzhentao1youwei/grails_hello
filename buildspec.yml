@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo building the Jar file
+      - grails war
+  post_build:
+    commands:
+      - echo build end............
+artifacts:
+  files:
+    - target/web.war
