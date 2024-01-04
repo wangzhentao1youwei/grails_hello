@@ -3,13 +3,16 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      #- #grails-2.5.6
       - echo build pre............
       - java -version
+      - wget -o grails-2.5.6 https://objects.githubusercontent.com/github-production-release-asset-2e65be/512295/72d1578e-0fa6-11e7-97fe-e006a2574d70?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240104T095700Z&X-Amz-Expires=300&X-Amz-Signature=82a8277b825605db4a5b0e593e49c18e8881c16f39670700139eac006ca90b7b&X-Amz-SignedHeaders=host&actor_id=150643886&key_id=0&repo_id=512295&response-content-disposition=attachment%3B%20filename%3Dgrails-2.5.6.zip&response-content-type=application%2Foctet-stream
+      - unzip -q grails-2.5.6 -d /usr/local
   build:
     commands:
       - echo Build started on `date`
       - echo building the Jar file
-      - grails war
+      - /usr/local/bin/grails war
   post_build:
     commands:
       - echo build end............
