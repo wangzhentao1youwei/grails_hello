@@ -6,7 +6,6 @@ phases:
       #- #grails-2.5.6
       - echo build pre............
       - java -version
-      - unzip -q grails-2.5.6.zip -d /usr/local
       - ll /usr/local
       - wget -o /usr/local/grails-2.5.6.zip https://github.com/grails/grails-core/releases/download/v2.5.6/grails-2.5.6.zip
       - unzip -q usr/local/grails-2.5.6.zip -d /usr/local
