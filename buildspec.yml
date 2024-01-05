@@ -10,6 +10,7 @@ phases:
       - ls
       - unzip -q grails-2.5.6.zip.1 -d /usr/local
       - export PATH="usr/local/grails-2.5.6/bin:$PATH"
+      - ls /root/.m2
 
   build:
     commands:
