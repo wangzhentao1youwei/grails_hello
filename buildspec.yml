@@ -32,4 +32,4 @@ artifacts:
 cache:
   paths:
     - '/root/.m2/**/*'
-    - 'usr/local/grails-2.5.6/**/*'
+    - '/usr/local/grails-2.5.6/**/*'
