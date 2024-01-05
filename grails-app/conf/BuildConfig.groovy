@@ -31,31 +31,27 @@ grails.project.dependency.resolution = {
     log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
-    grails.dependency.cache.dir = "/root/.m2/repertory"
+    grails.dependency.cache.dir = "/root/.m2/repository"
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
 
 
         // mavenRepo "https://repo.grails.org/artifactory/plugins/"
 
-        mavenRepo "https://packages.aliyun.com/maven/repository/2433920-release-IpeEhT/", {
-            auth([
-                    username :"655235d7c319d2a0f93e81a8",
-                    password :"z(5kQ6tHo4e6"
-            ])
-        }
+//        mavenRepo "https://packages.aliyun.com/maven/repository/2433920-release-IpeEhT/", {
+//            auth([
+//                    username :"655235d7c319d2a0f93e81a8",
+//                    password :"z(5kQ6tHo4e6"
+//            ])
+//        }
+//
+//        mavenRepo "https://packages.aliyun.com/maven/repository/2433920-snapshot-bvT3bu/", {
+//            auth([
+//                    username :"655235d7c319d2a0f93e81a8",
+//                    password :"z(5kQ6tHo4e6"
+//            ])
+//        }
 
-        mavenRepo "https://packages.aliyun.com/maven/repository/2433920-snapshot-bvT3bu/", {
-            auth([
-                    username :"655235d7c319d2a0f93e81a8",
-                    password :"z(5kQ6tHo4e6"
-            ])
-        }
-        mavenRepo "https://repo.grails.org/artifactory/plugins/"
-
-        //grailsPlugins()
-        //grailsHome()
-        //mavenLocal()
         grailsCentral()
 //        grailsPlugins()
 //        grailsHome()
@@ -63,6 +59,13 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
+
+        mavenRepo "https://repo.grails.org/artifactory/plugins/"
+
+        //grailsPlugins()
+        //grailsHome()
+        //mavenLocal()
+
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://repository.codehaus.org"
