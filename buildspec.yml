@@ -1,17 +1,17 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto8
+#  install:
+#    runtime-versions:
+#      java: corretto8
 
   pre_build:
     commands:
       #- #grails-2.5.6
       - echo build pre............
       - java -version
-      #- wget -o grails-2.5.6.zip https://github.com/grails/grails-core/releases/download/v2.5.6/grails-2.5.6.zip
-      - if ! ls -A usr/local/grails-2.5.6/ | grep -q "."; then wget -o grails-2.5.6.zip https://github.com/grails/grails-core/releases/download/v2.5.6/grails-2.5.6.zip && unzip -q grails-2.5.6.zip.1 -d /usr/local; fi
+      - wget -o grails-2.5.6.zip https://github.com/grails/grails-core/releases/download/v2.5.6/grails-2.5.6.zip
+      #- if ! ls -A usr/local/grails-2.5.6/ | grep -q "."; then wget -o grails-2.5.6.zip https://github.com/grails/grails-core/releases/download/v2.5.6/grails-2.5.6.zip && unzip -q grails-2.5.6.zip.1 -d /usr/local; fi
       - unzip -q grails-2.5.6.zip.1 -d /usr/local
       - ls
       - export PATH="usr/local/grails-2.5.6/bin:$PATH"
