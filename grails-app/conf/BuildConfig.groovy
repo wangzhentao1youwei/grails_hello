@@ -31,7 +31,7 @@ grails.project.dependency.resolution = {
     log "error" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
     checksums true // Whether to verify checksums on resolve
     legacyResolve false // whether to do a secondary resolve on plugin installation, not advised and here for backwards compatibility
-
+    grails.dependency.cache.dir = "/root/.m2/repertory"
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
 
