@@ -35,32 +35,24 @@ grails.project.dependency.resolution = {
     repositories {
         inherits true // Whether to inherit repository definitions from plugins
 
+        mavenRepo "https://repo.grails.org/artifactory/plugins/"
 
-        // mavenRepo "https://repo.grails.org/artifactory/plugins/"
+//        grailsPlugins()
+//        grailsHome()
+//        grailsCentral()
 
-        mavenRepo "https://packages.aliyun.com/maven/repository/2433920-release-IpeEhT/", {
-            auth([
-                    username :"655235d7c319d2a0f93e81a8",
-                    password :"z(5kQ6tHo4e6"
-            ])
-        }
-
-        mavenRepo "https://packages.aliyun.com/maven/repository/2433920-snapshot-bvT3bu/", {
-            auth([
-                    username :"655235d7c319d2a0f93e81a8",
-                    password :"z(5kQ6tHo4e6"
-            ])
-        }
-
-        //grailsPlugins()
-        //grailsHome()
-        //mavenLocal()
-        grailsCentral()
+        mavenLocal()
         mavenCentral()
+
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
-        //mavenRepo "http://repository.codehaus.org"
-        //mavenRepo "http://download.java.net/maven/2/"
-        //mavenRepo "http://repository.jboss.com/maven2/"
+        //mavenRepo 'http://snapshots.repository.codehaus.org'
+        //mavenRepo 'http://repository.codehaus.org'
+        //mavenRepo 'http://download.java.net/maven/2/'
+        //mavenRepo 'http://repository.jboss.com/maven2/'
+
+//      mavenRepo "http://repo.grails.org/grails/plugins"
+//		mavenRepo "http://repo.grails.org/grails/libs-releases/"
+//		mavenRepo "http://m2repo.spockframework.org/ext/"
 
         mavenRepo "https://maven.aliyun.com/repository/public/"
         mavenRepo "http://build.shibboleth.net/nexus/content/repositories/releases/"
