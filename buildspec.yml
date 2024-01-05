@@ -19,7 +19,8 @@ phases:
       - /usr/local/grails-2.5.6/bin/grails war
   post_build:
     commands:
-      - echo build end............
+      - echo build end.............
+      - ls /root/.m2
 artifacts:
   files:
     - target/web.war
