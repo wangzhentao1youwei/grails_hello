@@ -32,8 +32,3 @@ phases:
 artifacts:
   files:
     - target/web.war
-
-cache:
-  paths:
-#    - '/root/.m2/**/*'
-#    - '/usr/local/grails-2.5.6/**/*'
