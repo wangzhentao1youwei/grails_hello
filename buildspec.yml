@@ -14,7 +14,8 @@ phases:
       #- if ! ls -A usr/local/grails-2.5.6/ | grep -q "."; then wget -o grails-2.5.6.zip https://github.com/grails/grails-core/releases/download/v2.5.6/grails-2.5.6.zip && unzip -q grails-2.5.6.zip.1 -d /usr/local; fi
 #      - unzip -q grails-2.5.6.zip.1 -d /usr/local
       - ls /usr/local/grails-2.5.6/
-      - export PATH="usr/local/grails-2.5.6/bin:$PATH"
+      -  grails -version
+#      - export PATH="usr/local/grails-2.5.6/bin:$PATH"
       #- ls /root/.m2/repository
 
 
