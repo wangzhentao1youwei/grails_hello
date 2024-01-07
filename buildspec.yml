@@ -33,3 +33,4 @@ artifacts:
   files:
     - target/web.war
     - deploy.sh
+    - AppSpec.yml
