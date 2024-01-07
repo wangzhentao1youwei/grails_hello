@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
+files:
+  - source: /target/web.war
+    destination: /mnt/tomcat/webapps/
 hooks:
   BeforeInstall:
     - location: deploy.sh
