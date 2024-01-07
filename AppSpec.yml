@@ -1,7 +1,6 @@
 version: 0.0
 os: linux
-
 hooks:
-  ValidateService:
+  ApplicationStart:
     - location: /deploy.sh
       timeout: 180
