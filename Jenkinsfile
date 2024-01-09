@@ -35,7 +35,7 @@ pipeline{
                     sh "echo GIT_BRANCH : ${env.GIT_BRANCH}"
                     sh "echo BUILD_NUMBER : ${env.BUILD_NUMBER}"
                     sh "echo JOB_NAME : ${env.JOB_NAME}"
-                    sh "${JAVA_HOME}/java -version"
+                    sh "${JAVA_HOME}/bin/java -version"
                     sh "${GRAILS_HOME}/bin/grails -version"
                 }
             }
