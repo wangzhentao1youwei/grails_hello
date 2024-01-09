@@ -12,6 +12,13 @@ pipeline{
 
     stages{
 
+        stage("选择服务器"){
+            input message: '请选择要发布的服务器', ok: '啊啊啊', parameters: [choice(choices: ['qa', 'uat', 'prod'], description: '服务器', name: 'server')]
+            steps {
+                echo "已选择的服务器:${server}"
+            }
+        }
+
         stage('pipeline环境准备') {
 
             steps {
