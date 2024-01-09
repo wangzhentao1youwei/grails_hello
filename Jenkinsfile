@@ -41,12 +41,12 @@ pipeline{
             }
         }
 
-        stage("拉取代码"){
-            steps {
-                checkout scmGit(branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[credentialsId: '5bfeb44d-220d-4d2f-873e-74be3a56992c', url: 'https://github.com/wangzhentao1youwei/grails_hello.git']])
-                echo '拉取成功'
-            }
-        }
+//        stage("拉取代码"){
+//            steps {
+//                checkout scmGit(branches: [[name: 'main']], extensions: [], userRemoteConfigs: [[credentialsId: '5bfeb44d-220d-4d2f-873e-74be3a56992c', url: 'https://github.com/wangzhentao1youwei/grails_hello.git']])
+//                echo '拉取成功'
+//            }
+//        }
 
         stage("构建"){
             steps {
